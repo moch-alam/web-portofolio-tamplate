@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navigasi | Administrator</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    </head>
+<body>
+    <div class="navigasi">  <a href="admin.html">home</a>
+                            <a href="daftar.html">pendaftar</a>
+                            <a href="Data Anggota.html">Data Anggota</a>
+        <div class="dropdowns"> 
+            <button class="dropbtn">laporan &#9658;</button>
+            <div class="dropdowns-content">
+                <a href="#">laporan 1</a>
+                <a href="#">laporan 2</a>
+            </div> 
+
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1> pendaftaran anggota</h1>
+        <form method="post" action="daftarnew.php">
+            <table border="0">
+             <tr>
+                 <td> nama lengkap</td>
+                 <td colspan="3"><input type="text"name="nama"/></td>
+             </tr>
+             <td> gelar</td>
+             <td colspan="3"><input type="text"name="gelar"/></td>
+            
+            <tr>
+                <td >tempat tanggal lahir</td>
+                <td colspan="3"><input type="text"name="tempat"/></td>
+            </tr>
+            <tr>
+                <td>tanggal lahir</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+               <td>alamat rumah</td> 
+               <td><textarea cols="30" rows="5" name="alamat"></textarea></td>
+               </tr>
+               <tr>
+                   <td> jenis kelamin</td>
+                   <td colspan="3"><input type="radio" name="kelamin"value="laki-laki"/>laki-laki
+                   <input type="radio" name="kelamin" value="perempuan"/> perempuan
+                   </td>
+               </tr>
+               <tr>
+                   <td>pendidikan</td>
+                   <td colspan="3"><select>
+                   <option>-silahkan pilih</option>
+                   <option>s3</option>
+                   <option>s2</option>
+                   <option>s1</option>
+                   <option>SMA</option>
+                   <option>SMP</option>
+   
+                   </select></td>
+               </tr>
+               
+                   
+               
+                   <td>pekerjaan</td>
+                   <td colspan="3"> <select>
+                       <option>-silahkan pilih-</option>
+                       <option> PNS</option>
+                       <option>BUMN</option>
+                       <option>karyawan swasta</option>
+                       <option>wiraswata</option>
+                   </select> </td>
+               </tr>
+               <tr>
+                   <td> NO.hp</td>
+                   <td colspan="3"><input type="text"name="uan"/></td>
+               </tr>  
+           </table> 
+       </br>
+       <td>
+           <input type="submit" name="submit" value="simpan"/>
+           <input type="reset" name="reset" value="batal"/>
+       </td>
+            
+           </form>
+    </div>
+    
+</body>
+</html>
